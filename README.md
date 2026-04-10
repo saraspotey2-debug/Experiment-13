@@ -2,7 +2,7 @@
 # Aim
 To perform preprocessing on a dataset and dealing with missing values.
 # Theory
-1. Data preprocessing in Python involves cleaning, transforming, and preparing raw data for analysis using tools like Pandas.
+1. Data preprocessing in python involves cleaning, transforming, and preparing raw data for analysis using tools like Pandas.
 2. import pandas- This line imports the pandas library.Pandas is used for data handling and analysis.
 3. import numpy- This line imports the NumPy library to perform numerical and array operations in python.
 4. pd.DataFrame-It is used to create a structured table (rows and columns) from data like lists, dictionaries, or arrays.
