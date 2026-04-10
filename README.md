@@ -13,4 +13,15 @@ To perform preprocessing on a dataset and dealing with missing values.
 9. df1.dropna ()-It removes rows containing any missing (NaN) values from the DataFrame.
 10. df1.dropna(axis=1)-It removes columns that contain any missing (NaN) values from the DataFrame.
 11. df1.fillna(value='DEFAULT')-It replaces all missing (NaN) values in the DataFrame with the specified value 'DEFAULT'.
-12. 
+12. df1.fillna(0)-It replaces all missing (NaN) values in the DataFrame df1 with 0 .
+13. df1.fillna(df1.mean())-It replaces missing (NaN) values in each column of df1 with that column’s mean value.
+14. pd.DataFrame(data)-It creates a DataFrame (tabular structure of rows and columns) from the given data (like lists, dictionaries, or arrays).
+15. df.replace("-", np.nan, inplace=True)-It replaces all occurrences of "-" in the DataFrame df with NaN (missing values) directly in the original DataFrame.
+16. df["Age"] = pd.to_numeric(df["Age"], errors='coerce') converts the Age column to numeric values, replacing invalid or non-numeric entries with NaN.
+17. df["Marks"] = pd.to_numeric(df["Marks"], errors='coerce') converts the Marks column to numeric values, replacing any invalid or non-numeric entries with NaN.
+18. df["Age"].fillna(df["Age"].mean(), inplace=True) replaces missing (NaN) values in the Age column with the mean of that column directly in the original DataFrame.
+19. df["Marks"].fillna(df["Marks"].median(), inplace=True) replaces missing (NaN) values in the Marks column with the median of that column directly in the original DataFrame.
+20. df["Department"].str.upper() converts all text values in the Department column to uppercase.
+21. pd.to_datetime(df["Admission_Date"], format="mixed", dayfirst=True) converts the Admission_Date column to datetime format, handling mixed date formats and interpreting the day before the month.
+# Conclusion
+Data preprocessing ensures the dataset is clean, consistent, and ready for analysis by handling missing values, correcting data types, and standardizing formats, which improves the accuracy and reliability of results.
